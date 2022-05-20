@@ -1,0 +1,39 @@
+.pets__content{
+    background:$color-bg;
+}
+
+.pets__one{
+    @include flexColumn();
+    background:$color-head-hover;
+    border-radius:1rem;
+  
+.pets__tittl {
+    letter-spacing: 0.3rem;
+    text-align: center;
+}
+&:hover{
+   background:$color-h-main;
+   cursor:pointer; 
+   .button__bordered{
+      background-color: $color-brand-hover;
+    }
+  }
+}
+
+@media (max-width: 1279px){
+.woody{
+  display:none;
+}
+}
+
+@media (max-width: 767px){
+  .jennifer{
+    display:none;
+  }
+}
+
+@media (max-width: 460px){
+    .pets__only_pets{
+      order:-1;
+    }
+}

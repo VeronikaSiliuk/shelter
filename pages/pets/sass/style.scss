@@ -1,0 +1,17 @@
+// abstract
+@import "abstract/constans";
+@import "abstract/mixins";
+
+// base
+@import "base/base";
+
+//layout
+@import "layout/layout";
+
+//components
+@import "components/head";
+@import "components/buttons";
+@import "components/pets";
+@import "components/footer";
+@import "components/hamb";
+@import "components/popup";

@@ -1,0 +1,26 @@
+ 
+@mixin font($size, $height, $weight){
+    font-size: $size;
+    line-height:$height;
+    font-weight:$weight; 
+}
+
+@mixin flexColumn(){
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin media-laptop{
+    @media (max-width: $content-width){@content;}
+}
+@mixin media-tablet{
+    @media (max-width: $tablet-width){@content;}
+}
+@mixin media-mobile{
+    @media (max-width: $mobile-big-width){@content;}
+}
+@mixin media-mobilesmall{
+    @media (max-width: $mobile-small-width){@content;}
+}
+

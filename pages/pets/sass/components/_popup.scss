@@ -1,0 +1,80 @@
+// .overlay, .modal{
+//     visibility:hidden;
+// }
+
+.overlay._open{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(41, 41, 41, 0.6);
+    width: 100vw;
+    height: 100vh;
+    // z-index: 1;
+    visibility:visible;
+}
+.modal._open{
+    max-width:90rem;
+    max-height:50rem;
+    display:flex;
+    margin:0 auto;
+    justify-content:center;
+    background-color: $color-head-hover;
+    padding: 5rem 2rem;
+    border-radius: 10px;
+    visibility:visible;
+    flex-direction: column;
+  
+}
+
+
+.popup__close{
+    display: none;
+}
+
+.popup__close._open{
+    margin-left:100rem;
+    margin-top:20rem;
+    background-image: url("../../../../assets/icons/modal_close_button.svg");
+    background-size: contain;
+    display: inline-block;
+    width: 5.2rem;
+    height: 5.2rem;  
+}
+
+._open{
+    overflow: hidden;
+}
+.popup__content{
+    display:flex;
+    flex-direction: row;
+}
+.popup__img{
+    display:flex;  
+}
+.popup__only_pets{
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+.pets_name_pop, .pets_type_pop,
+.pets_description_pop, .pets_age_pop,
+.pets_inoculations_pop, .pets_diseases_pop,
+.pets_parasites_pop{
+    color:black;
+    display:flex;
+}
+
+.pets_name_pop{
+    font-size:3.5rem;
+    line-height: 4.55rem;
+}
+
+.pets_type_pop{
+    font-size:2rem;
+    line-height: 2.3rem;
+}
+.pets_description_pop{
+    font-size:1.5rem;
+    line-height: 1.65rem;
+}

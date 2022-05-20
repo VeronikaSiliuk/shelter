@@ -1,0 +1,11 @@
+@mixin font($size, $height, $weight){
+    font-size: $size;
+    line-height:$height;
+    font-weight:$weight; 
+}
+
+@mixin flexColumn(){
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

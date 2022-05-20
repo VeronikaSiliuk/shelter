@@ -1,0 +1,13 @@
+.about__description{
+   font-family:Arial, Helvetica, sans-serif;
+   @include font(1.5rem, 2.4rem, 400);
+    color: $color-text-about;
+}
+
+.about__description__tittle{
+width:37rem;
+@media (max-width: 460px){
+    width:30rem;
+    text-align: center;
+}
+}

@@ -1,0 +1,25 @@
+.footer__content{
+    background: url(../../../../assets/images/noise_transparent@2x.png), radial-gradient(59% 113.42% at -34% 106%, #5b483a 98%, #262425 138%), #211f20;
+}
+
+.footer_link_item,.footer__item{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    @include font(2rem, 2.3rem, 400);
+    letter-spacing: 0.2rem;
+    color: $color-brand;
+    display:flex;
+    align-items:center;
+    &:hover{
+        color: $color-brand-hover;
+    }
+}
+
+.some_link{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    @include font(2rem, 2.3rem, 400);
+    letter-spacing: 0.2rem;
+    color: $color-brand;
+    &:hover{
+        color: $color-brand-hover;
+    }
+}

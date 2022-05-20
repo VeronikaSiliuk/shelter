@@ -1,0 +1,72 @@
+.button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height:2.21rem;
+    padding: 15px 45px;
+    letter-spacing: 0.1rem;
+    color:$color-text-btn;
+    border-radius:10rem;
+    cursor:pointer;
+    transition:all .3s;
+    &__colored{
+        background-color: $color-brand;
+        border:2px solid $color-brand;
+    }
+    &__bordered{
+        background-color: $color-head-hover;
+        border:2px solid $color-brand-hover; 
+    }
+    &:hover{
+    background-color: $color-brand-hover;
+    border:2px solid transparent;
+    }
+}
+.pets__button_end,.start__button{
+    width:30rem;
+    height:5.2rem;
+}
+
+.btn__make-friend,.btn__get{
+    display:inline-block;
+    background-color: $color-brand;
+    border:2px solid $color-brand;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height:2.21rem;
+    letter-spacing: 0.1rem;
+    color:$color-text-btn;
+    border-radius:10rem;
+    cursor:pointer;
+    transition:all .3s;
+    &:hover{
+        background-color: $color-brand-hover;
+        border:2px solid transparent;
+        }
+}
+.btn__make-friend{
+    padding: 12px 40px;
+   
+}
+
+.btn__get{
+    padding: 15px 40px;
+}
+
+.button_arrow_left, .button_arrow_right{
+    cursor:pointer;
+    background-color: $color-bg;
+    border:2px solid $color-brand;
+    height:5.2rem;
+    width:5.2rem;
+    border-radius:10rem;
+    &:hover{
+        background-color: $color-brand-hover;
+        border:2px solid transparent;
+        }
+}
+
+.card__number:hover{
+    background-color: $color-brand-hover;
+    }

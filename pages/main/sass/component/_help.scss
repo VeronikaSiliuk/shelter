@@ -1,0 +1,111 @@
+.help__content{
+    background: $color-h-main;
+}
+
+.help__tittl{
+    letter-spacing: 0.3rem;
+}
+
+
+.pet_food{
+    display: inline-block;
+    background-image: url(../../../assets/icons/icon-pet-food.svg);
+    width:60px;
+    height:60px;
+    @media (max-width: 460px){
+       background-size: contain;
+       width:50px;
+       height:50px;
+    }
+    
+}
+
+.pet_transportation{
+    display: inline-block;
+    background-image: url(../../../assets/icons/icon-transportation.svg);
+    width:60px;
+    height:60px;
+    @media (max-width: 460px){
+        background-size: contain;
+        width:50px;
+        height:50px;
+     }
+}
+
+.pet_toys{
+    display: inline-block;
+    background-image: url(../../../assets/icons/icon-toys.svg);
+    width:60px;
+    height:60px;
+    @media (max-width: 460px){
+        background-size: contain;
+        width:50px;
+        height:50px;
+     }
+}
+
+.pet_bowls{
+    display: inline-block;
+    background-image: url(../../../assets/icons/icon-bowls-and-cups.svg);
+    width:60px;
+    height:60px;
+    @media (max-width: 460px){
+        background-size: contain;
+        width:50px;
+        height:50px;
+     }
+}
+.pet_shampoos{
+    display: inline-block;
+    background-image: url(../../../assets/icons/icon-shampoos.svg);
+    width:60px;
+    height:60px;
+    @media (max-width: 460px){
+        background-size: contain;
+        width:50px;
+        height:50px;
+     }
+}
+
+.pet_vitamins{
+    display: inline-block;
+    background-image: url(../../../assets/icons/icon-vitamins.svg);
+    width:60px;
+    height:60px;
+    @media (max-width: 460px){
+        background-size: contain;
+        width:50px;
+        height:50px;
+     }
+}
+
+.pet_medicines{
+    display: inline-block;
+    background-image: url(../../../assets/icons/icon-medicines.svg);
+    width:60px;
+    height:60px;
+}
+
+.pet_collars{
+    display: inline-block;
+    background-image: url(../../../assets/icons/icon-collars-leashes.svg);
+    width:60px;
+    height:60px;
+    @media (max-width: 460px){
+        background-size: contain;
+        width:50px;
+        height:50px;
+     }
+}
+
+.pet_sleeping{
+    display: inline-block;
+    background-image: url(../../../assets/icons/icon-sleeping-area.svg);
+    width:60px;
+    height:60px;
+    @media (max-width: 460px){
+        background-size: contain;
+        width:50px;
+        height:50px;
+     }
+}

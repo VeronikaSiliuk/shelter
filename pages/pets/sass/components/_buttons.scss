@@ -1,0 +1,56 @@
+.button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height:2.21rem;
+    padding: 15px 45px;
+    letter-spacing: 0.1rem;
+    color:$color-text-btn;
+    border-radius:10rem;
+    cursor:pointer;
+    transition:all .3s;
+    &__colored{
+        background-color: $color-brand;
+        border:2px solid $color-brand;
+    }
+    &__bordered{
+        background-color: $color-bg;
+        border:2px solid $color-brand;
+    }
+    &:hover{
+    background-color: $color-brand-hover;
+    border:2px solid transparent;
+    }
+}
+
+
+.transition{
+    cursor:pointer;
+    background-color: $color-bg;
+    border:2px solid $color-brand;
+    height:5.2rem;
+    width:5.2rem;
+    border-radius:10rem;
+    &.__page{
+        background-color: $color-brand;
+        &:hover{
+            cursor:default;
+            background-color: $color-brand;
+            }
+    }
+    &.inactive{
+        border:2px solid $color-text;
+        background-color: $color-bg;
+        cursor:default;
+        &:hover{
+            background-color: $color-bg;
+            border:2px solid $color-text;
+            }
+    }
+    &:hover{
+        background-color: $color-brand-hover;
+        border:2px solid transparent;
+        
+        }
+}
+

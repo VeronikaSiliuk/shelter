@@ -1,0 +1,28 @@
+.pets__content{
+    background:$color-bg;
+}
+
+.pets__one{
+    @include flexColumn();
+    background:$color-head-hover;
+    border-radius:1rem;
+   
+  
+.pets__tittl {
+    letter-spacing: 0.3rem;
+}
+&:hover{
+   background:$color-h-main;
+   cursor:pointer; 
+   .button__bordered{
+      background-color: $color-brand-hover;
+    }
+  }
+}
+
+.number{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:$color-text-btn;
+  @include font(2rem,2.3rem,400);
+  letter-spacing: 0.2rem;
+}

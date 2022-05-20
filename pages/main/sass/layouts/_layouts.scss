@@ -1,0 +1,490 @@
+.wrapper{
+    max-width: 128rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 20px;
+    @media (max-width: 1279px){
+        max-width: 100vw;
+    }
+}
+
+//сетка header
+.header__content{
+    display:flex;
+    padding: 6.2rem 4rem;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1279px){
+        width: 100vw;
+        padding: 3rem 3rem 0;
+    }
+    //@include media-mobilesmall{
+        @media (max-width: 460px){
+    padding: 29px 0;
+    justify-content: space-around;
+  
+  }
+}
+
+.header__logo._lock{
+   opacity: 0
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;   
+    @media (max-width: 1279px){
+        padding: 2rem 0;
+    }
+    @media (max-width: 767px){
+      display: none;
+   
+     }
+}
+.navigation._active {
+    @media (max-width: 767px){
+position:fixed;
+z-index:2;
+top:0;
+right:0;
+width:32rem;
+height: 100%;
+background-color:292929;
+display: flex;
+flex-direction: column;
+justify-content: center; 
+overflow:auto;
+transition:left .9s slide-in .9s;
+opacity:0.9;
+transition: .5s;
+
+}
+}
+
+.header__logo_hamb{
+    display:none;
+}
+
+.header__logo_hamb._active{
+    display: block;
+    padding-left:13rem;
+    z-index:2;
+    @media (max-width: 320px){
+        padding-left:0rem;
+    }
+}
+
+
+
+.body._lock{
+    // overflow:hidden;-почему то не отрабатывает
+    // z-index:1;
+    position: fixed;
+}
+
+//сетка start
+.start__content{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start; 
+    padding:0rem 4rem 0 4rem;
+    @media (max-width: 1279px){
+        width: 100vw;
+        padding: 0rem 15.3rem;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    @media (max-width: 460px){
+        padding: 0 1rem 1rem;
+      }
+}
+
+.start__info{
+    max-width:46rem;
+    display: flex;
+    flex-direction: column;
+    padding-top:16rem;
+    gap: 4rem;
+    @media (max-width: 1279px){
+        padding-top:6rem;
+    }
+    @media (max-width: 460px){
+        max-width:30rem;
+        padding-top:3rem;
+        align-items:center;
+      }
+}
+
+.start__button{
+    @media (max-width: 1279px){
+       width: 46rem;
+       text-align: end;
+    }
+    @media (max-width: 460px){
+       padding-left:4rem;
+        text-align: center;
+        }
+}
+
+h2{
+    max-width: 41.1rem;
+    @media (max-width: 460px){
+      text-align: center;
+      max-width:20rem;
+      }
+}
+
+//сетка about 
+.about__content{
+    width:120rem;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-top:0.5rem;
+    gap:11.5rem;
+    padding-bottom:3rem;
+    @media (max-width: 1279px){
+        flex-direction: column;
+        flex-flow: column-reverse;
+        gap:0rem;
+        padding-top:0;
+        margin-left:0;
+        padding-bottom:10rem;
+    }
+    @media (max-width: 460px){
+        padding-bottom:2rem;
+        width:30rem;
+    }
+}
+.about__photo{
+    display: flex;
+    padding-left:1rem;
+    @media (max-width: 760px){
+        padding:3rem 0.5rem;
+    }
+    @media (max-width: 460px){
+        padding:0rem 1rem 2.5rem;
+
+    }
+}
+.cat-and-dog{
+    @media (max-width: 460px){
+        width:80vw;
+    
+    }
+}
+
+.about__description{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap:2.5rem;
+    width: 43rem;
+    padding:8.2rem 0rem;
+    @media (max-width: 1279px){
+        padding:7.5rem 0rem;
+    }
+    @media (max-width: 460px){
+        width: 30rem;
+        padding:4.5rem 2rem 1.2rem 2rem;
+        text-align: justify;
+    }
+}
+
+//сетка pets
+
+.pets__content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:8.1rem;
+    @media (max-width: 460px){
+        padding-top:4.5rem;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+}
+
+.pets__tittle{
+    max-width:38rem;
+    text-align:center;
+    @media (max-width: 1279px){
+        max-width:37rem;
+    }
+    @media (max-width: 460px){
+        max-width:28rem;
+    }
+}
+
+.pets__some_pets{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:4.6rem 0rem;
+    @media (max-width: 1279px){
+        justify-content: space-around;
+    }
+    @media (max-width: 460px){
+        padding:3.1rem 0rem;
+        flex-wrap:wrap;
+    }
+}
+.pets__only_pets{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    gap:9rem;
+    @media (max-width: 1279px){
+        gap:5rem;
+    }
+}
+
+//кнопки стрелки
+.pets__arrow{
+    display:flex;
+    padding:2.8rem 2.4rem 0;
+    @media (max-width: 1279px){
+        padding:2.8rem 1rem 0;
+    }
+}
+
+.pets__some_pets{
+  overflow:hidden;
+}
+
+//просто кнопка
+.pets__button{
+padding-top:2.7rem;
+}
+.pets__button_end{
+    padding-top:2.7rem;
+    padding-bottom:14.9rem;
+    @media (max-width: 460px){
+        align-items: center;
+        padding-top:1.5rem;
+        padding-bottom:10rem;
+    }
+
+}
+
+
+.pets__one{
+    justify-content:center;
+    width:27rem;
+    height:43.5rem;
+    gap:0.3rem;
+}
+
+.pet__name{
+    padding-top:2.5rem;
+    @media (max-width: 460px){
+        @include font(2rem, 2.27rem,400);
+    }
+}
+
+//сетка help
+
+.help__content{
+    padding-top:8.1rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:5.7rem;
+      @media (max-width: 1279px){
+        padding:8.4rem;
+    }
+    @media (max-width: 460px){
+        width:29rem;
+        padding:0;
+        padding:3.5rem 1.5rem 0;
+        gap:4rem;
+    }
+}
+
+.help__tittle{
+    text-align:center;
+    max-width: 33rem;
+}
+
+.help__nine-layout{
+    display:flex;
+    width:102.6rem;
+    flex-wrap: wrap;
+    row-gap: 5.5rem;
+    column-gap: 11.9rem;
+    justify-content: center;
+    padding-bottom:10rem;
+    @media (max-width: 1279px){
+        width:83vw;
+        row-gap: 5.5rem;
+        column-gap: 11.5rem;
+        padding-bottom:2rem;
+    }
+    @media (max-width: 460px){
+       width:29rem;
+       column-gap: 3rem;
+       row-gap: 2rem;
+       justify-content: start;
+    }
+}
+
+.help__someone{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+    gap:3rem;
+    @media (max-width: 460px){
+        width:13rem;
+     }
+}
+
+
+
+
+//сетка donates
+.donation__content{
+    width:91.5rem;
+    display: flex;
+    align-items:center;
+    gap:3.2rem;
+    justify-content:space-around;
+    padding-top:6.2rem;
+    padding-bottom:9.6rem;
+    @media (max-width: 1279px){
+        flex-direction: column;
+        flex-flow: column-reverse;
+        gap:0rem;
+        padding-top:6rem;
+        margin-left:0;
+        padding-bottom:9rem;
+    }
+    @media (max-width: 460px){
+        width:30rem;
+        padding-top:2.5rem;
+        padding-left:1.2rem;
+        padding-bottom:4rem;
+    }
+}
+.donation__description{
+    display:flex;
+    flex-direction: column;
+    max-width:38rem;
+    gap:2rem;
+    @media (max-width: 1279px){
+        justify-content: start;
+    }
+    @media (max-width: 460px){
+        width:30rem;
+        gap:2rem;
+        padding:0 2rem;
+    }
+}
+.donation__photo{
+    padding-top:2.3rem;
+    @media (max-width: 1279px){
+        padding-top:5.8rem;
+    }
+    @media (max-width: 460px){
+        padding-top:3rem;
+    }
+}
+.donat_dog{
+    @media (max-width: 650px){
+        width:80vw;
+       
+    }
+    @media (max-width: 460px){
+        width:80vw;
+    }
+}
+.donation__tittle{
+    padding-top:2rem;
+}
+
+
+
+//сетка footer
+.footer__content{
+    margin-top:0.3rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:8rem;
+    @media (max-width: 1279px){
+        margin-top:0.3rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width:100vw;
+        gap:0.5rem;
+        justify-content: space-around;
+        padding-top:2.7rem;
+    }
+    @media (max-width: 460px){
+        width:32rem;
+        gap:2rem;
+        margin-top:0rem;
+        //padding:0 1rem;
+    }
+}
+
+.connection{
+    @include flexColumn();
+    max-width:40rem;
+    gap:2rem;
+    align-items: flex-start;
+    padding-left:4rem;
+    @media (max-width: 1279px){
+        padding-left:4.4rem;
+        max-width:34rem;
+        gap:2rem;
+    }
+    @media (max-width: 460px){
+        width:30rem;
+        padding:0 2rem;
+    }
+}
+
+.footer__connect{
+    display:flex;
+    flex-direction: column;
+    gap:4rem;
+    padding:0;
+    @media (max-width: 1279px){
+        padding-top:1.8rem;
+        gap:4rem;
+    }
+}
+
+.visitting{
+    @include flexColumn();
+    max-width:40rem;
+    gap:3rem;
+    align-items: flex-start;
+    @media (max-width: 1279px){
+        max-width:33rem;
+        gap:2rem;
+    }
+    @media (max-width: 460px){
+        width:30rem;
+        padding:1.5rem 0.5rem 0;
+    }
+}
+
+.footer__photo{
+    display:block;
+    padding-top: 3.9rem;
+    padding-right: 4rem;
+    @media (max-width: 1279px){
+        padding-top: 5.2rem;
+        padding-right: 0;
+    }
+   @media (max-width: 460px){
+        padding-top: 0;
+    }
+}
+.hamburger{
+display:none;
+}
